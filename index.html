@@ -1,0 +1,51 @@
+<html>
+    <head>
+       <title>App Minha selfie</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+
+    <div class="container">
+    <center>
+        <a href="" id="link" download="foto.png"></a>
+        <h1>App Selfie por voz 
+
+        </h1>
+        <img src="myFilterImage (4).png" id="logo_img">
+        <hr>
+        <h4 style="color:rgb(0, 195, 255);">Pressione permitir assim que o pop-up for exibido. Depois de dar um comando de voz</h4>
+        
+        <div class="form-group">
+            <h3>Diga "Tire minha selfie um" ou "Tire minha selfie dois"</h3>
+            <label>Sua saída de voz : </label>
+            <textarea id="textbox" readonly="true" class="form-control"></textarea>
+            <button class="btn btn-success" onclick="start()">Iniciar</button>
+
+        </div>
+
+        <p>Pressione o botão Iniciar</p>
+
+        <label>Sua webcam : </label>
+        <div id="camera"></div>
+
+        <label>Sua selfie será exibida aqui: </label>
+    <div id="result"></div>
+
+<div id="result2"></div>
+</div>
+</div>
+</center>
+    <script src="main.js"></script>
+</body>
+</html>
